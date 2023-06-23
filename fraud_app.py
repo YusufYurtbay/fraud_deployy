@@ -15,10 +15,10 @@ html_temp = """
 st.markdown(html_temp, unsafe_allow_html=True)
 original_title = '<p style="font-family:Courier; color:Blue; text-align:center; font-size: 50px;"><b>Select Your Model</b></p>'
 st.markdown(original_title, unsafe_allow_html=True)
-selection = st.selectbox("", ["final_model"])
+selection = st.selectbox("none", ["Best_model"])
 
 
-st.write( "You selected", selection, "model")
+st.write( "You selected", selection)
 model = pickle.load(open('pickle_model', 'rb'))
 
 
