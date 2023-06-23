@@ -18,7 +18,7 @@ st.markdown(original_title, unsafe_allow_html=True)
 selection = st.selectbox("", ["final_model"])
 
 
-st.write( selection, "model")
+st.write( "You selected", selection, "model")
 model = pickle.load(open('pickle_model', 'rb'))
 
 
