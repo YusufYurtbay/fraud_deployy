@@ -24,11 +24,11 @@ model = pickle.load(open('pickle_model', 'rb'))
 
 
 # columns = ["v4", ‘v14’, ‘v12’, ‘v10’, ‘v11’]
-v4 = st.sidebar.slider(label="V4", min_value=-80.00, max_value=3.00, step=0.01)
-v14 = st.sidebar.slider(label="V14", min_value=-6.00, max_value=17.00, step=0.01)
+v4 = st.sidebar.slider(label="V4", min_value=-6.00, max_value=17.00, step=0.01)
+v14 = st.sidebar.slider(label="V14", min_value=-20.00, max_value=11.00, step=0.01)
 v10 = st.sidebar.slider(label="V10", min_value=-25.00, max_value=24.00, step=0.01)
-v11 = st.sidebar.slider("V11", min_value=-19.00, max_value=8.00, step=0.01)
-v12 = st.sidebar.slider("V12", min_value=-20.00, max_value=11.00, step=0.01)
+v11 = st.sidebar.slider("V11", min_value=-5.00, max_value=13.00, step=0.01)
+v12 = st.sidebar.slider("V12", min_value=-11.00, max_value=8.00, step=0.01)
 
 feature  = pd.DataFrame({"V4":[v4], "V14":[v14], "V10":[v10], "V11":[v11], "V12":[v12]})
 
